@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://img.freepik.com/premium-vector/vaporwave-background-disco_102902-3015.jpg?size=626&ext=jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+} 
+
+.memory-matcher {
+    
+    /* border: 10px solid green; */
+    display: grid;
+    grid-template-columns: repeat(4, 10rem);
+    grid-template-rows: repeat(4, 10rem);
+    perspective: 800px;
+}
+
+.cards {
+    /* border: 3px solid green; */
+    position: relative;
+    transition: transform .5s ease-in-out;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    margin: 30px;
+    
+}
+
+.cards.flip {
+    transform: rotateY(360deg);
+    /* border: 10px solid green; */
+}
+
+.front-side, .back-side {
+    height: 150%;
+    width: 100%;
+    position: absolute;
+    /* border: 10px solid blue; */
+    border-radius: 20px;
+}
+
+.back-side {
+    backface-visibility: hidden;
+}
+
+.start, .reset {
+    margin: 5px;
+    font-size: 30px;
+    display: inline-flex;
+}
