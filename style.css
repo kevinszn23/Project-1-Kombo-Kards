@@ -6,6 +6,7 @@
 
 h1 {
     font-size: 40px;
+
 }
 
 body {
@@ -50,10 +51,12 @@ body {
     position: absolute;
     /* border: 10px solid blue; */
     border-radius: 20px;
+    backface-visibility: hidden;
+    border: 3px solid white;
 }
 
-.back-side {
-    backface-visibility: hidden;
+.front-side {
+    transform: rotateY(180deg)
 }
 
 .start, .reset {
