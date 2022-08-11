@@ -48,6 +48,8 @@ function flipCard() {
 
         //now figure out if cards match using data attribute
         if (firstCard.dataset.match === secondCard.dataset.match) {
+            firstCard.removeEventListener("click", flipCard)
+            secondCard.removeEventListener("click", flipCard)
             console.log("It's a match!")
             matches++
             htmlmatches.innerHTML = `Matches: ${matches}`
@@ -61,8 +63,6 @@ function flipCard() {
             // correctMatch.push(firstCard)
             // correctMatch.push(secondCard)
             
-            // firstCard.removeEventListener("click", flipCard)
-            // secondCard.removeEventListener("click", flipCard)
             //if match - remove event listener so they cannot be clicked again
             // console.log("removing event listener works")
             //what if not a match?
