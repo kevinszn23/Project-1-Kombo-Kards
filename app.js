@@ -1,13 +1,11 @@
 const cards = document.querySelectorAll(".cards")
 const startButton = document.querySelector(".start")
-const section = document.querySelector("section") //why no dot here?
+const section = document.querySelector("section")
 const reset = document.querySelector(".reset")
 const htmlmatches = document.querySelector(".matches")
 const winner = document.querySelector(".winner")
 let matches = 0;
 
-
-let correctMatch = [];
 
 let shuffledCards = [];
 function shuffle(arr) {
@@ -26,13 +24,15 @@ shuffledCards.forEach(card => {
 })
 
 }
+
 startButton.addEventListener("click", shuffle)
 
     let flipped = false; //starts out with all cards unflipped
     let firstCard, secondCard;
 
 function flipCard() {
-    this.classList.toggle("flip")
+    this.classList.add("cards", "flip")
+    // ("class", "cards flip")
 
     if (!flipped) { //first click
         flipped = true
@@ -86,6 +86,10 @@ cards.forEach(cards => cards.addEventListener("click", flipCard))
 
 function resetGame() {
     shuffle(shuffledCards)
+    // shuffledCards.classList.remove("flip")
+    section.setAttribute("class", "cards")
+    
+    console.log(shuffledCards)
     matches = 0
     htmlmatches.innerHTML = `Matches: ${matches}`
     shuffledCards.forEach(card => {
