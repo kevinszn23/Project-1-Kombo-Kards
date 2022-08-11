@@ -85,16 +85,18 @@ cards.forEach(cards => cards.addEventListener("click", flipCard))
 
 
 function resetGame() {
-    shuffle(shuffledCards)
+    // shuffle(shuffledCards)
     // shuffledCards.classList.remove("flip")
-    section.setAttribute("class", "cards")
-    
+    // section.setAttribute("class", "cards")
+    // this.classList.remove("cards")
+    let charles = document.getElementsByClassName("cards")
+    charles.classList.remove("cards")
     console.log(shuffledCards)
     matches = 0
     htmlmatches.innerHTML = `Matches: ${matches}`
-    shuffledCards.forEach(card => {
-        flipCard()
-    })
+    // shuffledCards.forEach(card => {
+    //     flipCard()
+    // })
     // if (flipped = true) 
     console.log("it clicks")
 }
