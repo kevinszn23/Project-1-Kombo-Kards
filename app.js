@@ -46,7 +46,6 @@ function flipCard() {
         // console.log(firstCard.dataset.match)
         // console.log(secondCard.dataset.match)
 
-        //now figure out if cards match using data attribute
         if (firstCard.dataset.match === secondCard.dataset.match) {
             firstCard.removeEventListener("click", flipCard)
             secondCard.removeEventListener("click", flipCard)
@@ -85,10 +84,6 @@ cards.forEach(cards => cards.addEventListener("click", flipCard))
 
 
 function resetGame() {
-    // shuffle(shuffledCards)
-    // shuffledCards.classList.remove("flip")
-    // section.setAttribute("class", "cards")
-    // this.classList.remove("cards")
     //node list, have to iterate over each element
     let charles = document.getElementsByClassName("cards")
 
@@ -115,25 +110,9 @@ function resetGame() {
 reset.addEventListener("click", resetGame)
 
 
-//win con
-//if all the cards are flipped and match with their data attribute = win
-//use empty array above
 
 
 
 
-
-//mvps
-    //functional start screen
-    //functional main game screen where all the cards are clickable and flip over properly
-    //user can only click same card once
-    //set win and lose conditions
-    //make sure timer is working properly
-    //make sure the appropriate messages pop up when the user matches a pair, wins, or loses
-
-
-//after mvp
-    //styling of cards
-    //styling of the board and title
 
 
