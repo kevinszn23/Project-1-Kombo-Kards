@@ -89,11 +89,21 @@ function resetGame() {
     // shuffledCards.classList.remove("flip")
     // section.setAttribute("class", "cards")
     // this.classList.remove("cards")
+    //node list, have to iterate over each element
     let charles = document.getElementsByClassName("cards")
-    charles.classList.remove("cards")
+
+    for (let i = 0; i < charles.length; i++) {
+        if (charles[i].classList.length > 1) {
+            charles[i].classList.remove("flip")
+        }
+    }
+    // charles.forEach(card => {
+    //     card.classList.remove("flip")
+    // })
     console.log(shuffledCards)
     matches = 0
     htmlmatches.innerHTML = `Matches: ${matches}`
+    shuffle(shuffledCards)
     // shuffledCards.forEach(card => {
     //     flipCard()
     // })
@@ -101,14 +111,6 @@ function resetGame() {
     console.log("it clicks")
 }
 
-//tried - pushing into an empty array
-//tried toggle
-//tried remove/add
-//tried changing flip function
-//instead of changing class, adds "flip" to it
-//tried putting shuffle function in reset button, didnt work either
-//now can click same card as well
-//confused on CSS frontside backside
 
 reset.addEventListener("click", resetGame)
 
