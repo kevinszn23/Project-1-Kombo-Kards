@@ -59,13 +59,10 @@ function flipCard() {
     }
 }
 
- //citation: https://stackoverflow.com/questions/64852567/html-memory-game-check-if-two-pictures-matched-function
-
 cards.forEach(cards => cards.addEventListener("click", flipCard))
 
 
 function resetGame() {
-    //node list, have to iterate over each element
     let charles = document.getElementsByClassName("cards")
 
     for (let i = 0; i < charles.length; i++) {
