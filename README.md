@@ -32,3 +32,7 @@
 # My biggest challenge was the Reset button - couldn't figure it out so I got some help from TA's and Eric. I learned that I cannot directly change the class of a node list (which I/we were attempting to do which is why my Reset button was not working) and that I need to iterate over each element instead.
 
 # Key learnings - How important it is to use console.log, node lists and arrays are different, breaking problems down as small as possible and then tackle the next issue/problem, how to implement a downloaded font into CSS, and how much code is required for such a simple game.
+
+# Citation:
+
+# https://stackoverflow.com/questions/64852567/html-memory-game-check-if-two-pictures-matched-function
