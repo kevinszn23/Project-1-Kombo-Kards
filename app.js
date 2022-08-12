@@ -63,11 +63,11 @@ cards.forEach(cards => cards.addEventListener("click", flipCard))
 
 
 function resetGame() {
-    let charles = document.getElementsByClassName("cards")
+    let resettingCards = document.getElementsByClassName("cards")
 
-    for (let i = 0; i < charles.length; i++) {
-        if (charles[i].classList.length > 1) {
-            charles[i].classList.remove("flip")
+    for (let i = 0; i < resettingCards.length; i++) {
+        if (resettingCards[i].classList.length > 1) {
+            resettingCards[i].classList.remove("flip")
         }
     }
     matches = 0

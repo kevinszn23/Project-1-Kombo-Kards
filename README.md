@@ -1,145 +1,34 @@
-# PROJECT 1! **Browser-based Game**
+# Title of game:
 
-## **Overview**
+# Kombo Kards
 
-Your first SEI project will start out with something fun - **a game!**
+# Screenshots of the game:
 
-Thanks to the amount of logic there is in a game, there's no better app than a game to teach you how to **think like a programmer**!
+# 1) <img width="1440" alt="Screen Shot 2022-08-11 at 11 25 29 PM" src="https://user-images.githubusercontent.com/109487146/184279655-45e6f11e-0dda-431d-a0c8-e6fb18c2740a.png">
 
-Everyone will get a chance to **be creative**, and work through some really **tough programming challenges**. You got your feet wet with Tic-Tac-Toe, and we built a game or two during class - now it's time to step it up a notch.
+# 2) <img width="1440" alt="Screen Shot 2022-08-11 at 11 25 38 PM" src="https://user-images.githubusercontent.com/109487146/184279777-9c781e33-b761-4d33-88e4-5b51ff8a8ee4.png">
 
-**You will be working individually for this project**. However, your instructors and instructor assistants will be guiding you along with up to ten 15-minute one-on-one sessions. Be sure to use them wisely :).
+# 3) <img width="1440" alt="Screen Shot 2022-08-11 at 11 27 03 PM" src="https://user-images.githubusercontent.com/109487146/184280304-82d3a36c-b63b-4af1-8420-9265c5852423.png">
 
-As a reminder, GA has a zero plagiarism policy - your project's code **must be substantially yours**. **Do not copy code from other similar projects or other sources**. However, using lines of code from StackOverflow to accomplish general techniques/algorithms is okay - an example would be using StackOverflow as a source for code that replaces a character at a certain position in a string.
+# Technologies Used:
 
----
+# HTML, Javascript, CSS
 
-## **Planning & Presentation Requirements**
+# Getting Started:
 
-### **Planning - Due By BOD August 8, 2022**
+# Make sure to hit the Start button at the bottom to randomize the cards and then you can start matching. Feel free to use the Reset button to clear the board and go again!
 
-- You will share:
-    
-    ☐ Your choice of game.
-    
-    ☐ A wireframe of your "main" game screen. (Many students find [https://www.figma.com/](https://www.figma.com/) helpful)
-    
-    ☐ Pseudocode for the overall gameplay.
+# Next Steps:
+# There are some edge cases in my game where it breaks the code. For example, if I click the cards too fast, the card will not flip or I will get a match on the same card.
 
-### **Presentation - Friday, August 12th:**
+# Another example would be if I flip 2 cards and while they are still flipped, I click a 3rd card, it will bug out the animation and the cards.
 
-You will have a maximum of 10 minutes to present your project following these guidelines:
+# I think the best next steps would be to refactor my code so it looks cleaner and runs better to cover the above-mentioned edge cases.
 
-1. **Introduce the Project:**
-    
-    ☐ Intro your game by paraphrasing the README.
-    
-2. **Demonstrate the Project:**
-    
-    ☐ Launch the game by clicking the link in the README.
-    
-    ☐ Play the game! If necessary, manipulate the values of variables in the console to ensure a quick win or loss.
-    
-3. **Show/discuss your code:**
-    
-    ☐ Briefly show the HTML & CSS.
-    
-    ☐ Show the JavaScript and discuss your favorite function.
-    
-4. **Share the experience:**
-    
-    ☐ What was your biggest challenge?
-    
-    ☐ What are your key learnings/takeaways?
-    
-5. **Q & A + Feedback**
+# Experience:
 
----
+# Overall, I like the aesthetic of my game, but it does not run as optimally as I'd like. I am very proud of myself though, that I actually built a browser game (with a lot of help!)
 
-## **Technical Requirements**
+# My biggest challenge was the Reset button - couldn't figure it out so I got some help from TA's and Eric. I learned that I cannot directly change the class of a node list (which I/we were attempting to do which is why my Reset button was not working) and that I need to iterate over each element instead.
 
-### **Your App Must:**
-
-☐ **Render a game in the browser**.
-
-☐ **Include win and/or loss logic and render win/loss messages in HTML.** Popup alerts using the `alert()` method are okay during development, but not production.
-
-☐ Include separate HTML, CSS & JavaScript files.
-
-☐ Have **properly indented HTML, CSS & JavaScript**. In addition, vertical whitespace needs to be consistent.
-
-☐ No remaining **dead and/or commented out code** (code that will never be called).
-
-☐ Have functions and variables that are named sensibly. Remember, functions are typically named as verbs, and variables (data) are named as nouns.
-
-☐ **Be coded in a consistent** manner. For example, choose between your preference for function declarations vs. function expressions.
-
-☐ **Deploy your game online** using GitHub Pages so that the rest of the world can play your game!
-
----
-
-## **Necessary Deliverables**
-
-☐ The code for **a working game that meets or exceeds the above technical requirements, built by you, and hosted on GitHub Pages** (covered next week).
-
-- **A `README.md` file** with these sections:
-    
-    ☐ **<Your game's title>**: A description of your game. Background info of the game is a nice touch.
-    
-    ☐ **Screenshot(s):** Images of your actual game.
-    
-    ☐ **Technologies Used**: List of the technologies used, e.g., JavaScript, HTML, CSS...
-    
-    ☐ **Getting Started**: In this section include the link to your deployed game and any instructions you deem important.
-    
-    ☐ **Next Steps**: Planned future enhancements (icebox items).
-    
-    > Note: Don't underestimate the value of a well-crafted README.md. The README.md introduces your project to prospective employers and forms their first impression of your work!
-    > 
-
-☐ **Frequent commits dating back to the very beginning of the project**. Commit messages should be in the present tense, e.g., "Style game board" instead of "Styled game board". **Be sure to create the repo on your personal GitHub account and ensure that it is "public".**
-
----
-
-## **Choose From the Following Games**
-
-> Note: Games are listed in approximate order of increasing difficulty.
-> 
-0. **Tamagotchi**
-1. **Trivia game**
-2. **War** (the card game)
-3. **Blackjack**
-4. **Slot Machine**
-5. **Simon** (warning: will require asynchronous timing)
-6. **2048**
-7. **Minesweeper**
-8. **Checkers** (no AI required - player vs. player is fine)
-9. **Solitaire**
-10. **Battleship** (would require a little AI to implement a computer opponent)
-
-**If you have a game not on the list that you'd like to code, please be sure to get approval from your instructor!**
-
-> *IMPORTANT: Because it's important to demonstrate your ability to perform DOM manipulation using JavaScript, all games should be DOM-based, **not canvas-based**.*
-> 
-
----
-
-## **Suggestions**
-
-- **The BEST advice is to follow the guidelines and principles in the** [Guide to Building a Browser App](https://gist.github.com/jim-clark/6f1919291f6007b2c0b2c93d925d6bac). The guide will give you a step-by-step process to get you started and its MVC design pattern will result in clearer, more concise code that can scale functionality more easily.
-- **Theme your game** to give it a more personal touch and make it more unique!
-- **Use your Development Tools** (`console.log`, DevTools' debugger, `alert` statements) to debug and solve issues.
-- Stick with the **KISS (Keep It Simple Stupid)** principle. Minimum Viable Product (MVP) functionality that looks great is better than extra functionality added to a game without polish.
-- If you choose a card-based game, there is a CSS library in the *resources* directory of the class repo that will help you render **beautiful** cards of any size, front and back.
-- **Commit early, commit often.** Don’t be afraid to break something because you can always go back in time to a previous version.
-- **Consult documentation and other resources** to better understand methods, etc.
-- Write **DRY (Don't Repeat Yourself)** code. Check for repeating code and refactor into functions that accept arguments.
-
----
-
-## **Project Feedback + Evaluation**
-
-- Your instructors will be evaluating your project during your demonstration as well as reviewing the code in your repo.
-- If your instructors determine that your project does not meet the above requirements (denoted using checkboxes), you will be given 3 calendar days to address the deficiencies identified. However, be aware that **there is only a single opportunity to resubmit a project during the course**. For example, if you have to resubmit Project 1, you will not have an opportunity to resubmit Projects 2, 3, or 4.
-- Immediately after your presentation, your instructor and/or outcomes may provide you with feedback that will benefit your project and perhaps the projects of other students as well.
-- If there is a specific section of code that you would like an instructor to provide additional feedback on, please ask!
+# Key learnings - How important it is to use console.log, node lists and arrays are different, breaking problems down as small as possible and then tackle the next issue/problem, how to implement a downloaded font into CSS, and how much code is required for such a simple game.
