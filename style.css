@@ -10,56 +10,54 @@
 }
 
 h1 {
-    font-size: 40px;
-    /* border: 3px solid deeppink; */
+    font-size: 60px;
     font-family: Silkscreen;
+    padding-top: 100px;
+    text-decoration: underline;
+
 }
 
 h2 {
     font-family: Silkscreen;
+    font-size: 40px;
+    padding: 10px;
 }
 
 body {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-image: url(https://img.freepik.com/premium-vector/vaporwave-background-disco_102902-3015.jpg?size=626&ext=jpg);
-    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
-} 
+    background-repeat: no-repeat;
+}
 
 .memory-matcher {
-    
-    /* border: 10px solid green; */
     display: grid;
     grid-template-columns: repeat(4, 10rem);
     grid-template-rows: repeat(4, 10rem);
     perspective: 800px;
+    
 }
 
 .cards {
-    /* border: 3px solid green; */
     position: relative;
     transition: transform .5s ease-in-out;
     transform: rotateY(180deg);
     transform-style: preserve-3d;
-    margin: 30px;
-    
+    margin: 30px;  
 }
 
 .cards.flip {
     transform: rotateY(360deg);
-    /* border: 10px solid green; */
 }
 
 .front-side, .back-side {
     height: 150%;
     width: 100%;
     position: absolute;
-    /* border: 10px solid blue; */
     border-radius: 20px;
     backface-visibility: hidden;
     border: 3px solid white;
@@ -71,9 +69,11 @@ body {
 
 .start, .reset {
     margin: 5px;
+    font-family: Silkscreen;
     font-size: 30px;
-    display: inline-flex;
     border: 3px solid deepskyblue;
     border-radius: 10px;
     color: black;
+    padding: 20px;
+    margin: auto;
 }
