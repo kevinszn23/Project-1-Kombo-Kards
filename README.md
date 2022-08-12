@@ -1,6 +1,7 @@
 # Title of game:
 
 # Kombo Kards
+# To play, click here: https://kevinszn23.github.io/Project-1-Kombo-Kards/
 
 # Screenshots of the game:
 
